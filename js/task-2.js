@@ -8,8 +8,8 @@ console.log(getShippingMessage("Germany", 80, 20)); // "Shipping to Germany will
 console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will cost 120 credits"
 
 function formatMessage(message, maxLength) {
-  if (message.lenght > maxLength) {
-    return `${message.lenght(number(maxLength))}...`;
+  if (message > maxLength) {
+    return `message.lenght(number(maxLength)) ...`;
   }
 }
 

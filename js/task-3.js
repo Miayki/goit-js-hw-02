@@ -1,13 +1,21 @@
-function getElementWidth(content, padding, border) {
+/* function getElementWidth(content, padding, border) {
   return parseFloat(content) + parseFloat(padding) * 2 + parseFloat(border) * 2;
 }
 console.log(getElementWidth("50px", "8px", "4px")); // 74
 console.log(getElementWidth("60px", "12px", "8.5px")); // 101
 console.log(getElementWidth("200px", "0px", "0px")); // 200
-
+*/
 function checkForSpam(message) {
-  return message.toLowerCase().includes(`spam`, `sale`);
+  if (message.toLowerCase().includes(`spam`)) {
+    return !message;
+  }
+  if (message.toLowerCase().includes(`sale`)) {
+    return !message;
+  } else {
+    return message;
+  }
 }
+
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
 console.log(checkForSpam("Get best sale offers now!")); // true

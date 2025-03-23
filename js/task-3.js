@@ -7,12 +7,11 @@ console.log(getElementWidth("200px", "0px", "0px")); // 200
 */
 function checkForSpam(message) {
   if (message.toLowerCase().includes(`spam`)) {
-    return !message;
-  }
-  if (message.toLowerCase().includes(`sale`)) {
-    return !message;
+    return !message.includes();
+  } else if (message.toLowerCase().includes(`sale`)) {
+    return !message.includes();
   } else {
-    return message;
+    return message.includes();
   }
 }
 

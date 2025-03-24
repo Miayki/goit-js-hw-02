@@ -1,6 +1,4 @@
 function getShippingCost(country) {
-  const australia = (price = 170);
-  const chile = price;
   switch (country) {
     case `Australia`:
       price = 170;
